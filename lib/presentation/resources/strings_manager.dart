@@ -15,4 +15,6 @@ class AppStrings {
       "Best Tracker has been Used For \n Track your order. You'll know where \n your product is at the moment. ";
   static const String onBoardingBody4 =
       "Reliable and fast delivery. We \n deliver your product the fastest was possible";
+
+  static const String continueBtn = "Continue";
 }
