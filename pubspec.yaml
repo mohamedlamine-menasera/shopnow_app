@@ -123,6 +123,11 @@ flutter:
         - asset: assets/fonts/Cairo/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo/Cairo-Bold.ttf
           weight: 700
+    - family: PlayfairDisplaySC
+      fonts:
+          - asset: assets/fonts/PlayfairDisplaySC/PlayfairDisplaySC-Regular.ttf
+          - asset: assets/fonts/PlayfairDisplaySC/PlayfairDisplaySC-Bold.ttf
+            weight: 700
 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

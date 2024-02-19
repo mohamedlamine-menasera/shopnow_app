@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:shopnow_app/presentation/localization/translation.dart';
 import 'package:shopnow_app/presentation/onboarding/view/onboarding_view.dart';
+import 'package:shopnow_app/presentation/resources/route_manager.dart';
+import 'package:shopnow_app/presentation/resources/theme_manager.dart';
+import 'package:shopnow_app/presentation/services/services.dart';
 
-void main() {
+void main()  async{
+  // Services
+  WidgetsFlutterBinding.ensureInitialized();
+  await initialServices();
+
   runApp(const MyApp());
 }
 
@@ -15,12 +23,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const OnBoarding(),
+      theme: getApplicationTheme(),
+      translations: MyTranslation(),
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.onBoardingRoute,
     );
   }
 }

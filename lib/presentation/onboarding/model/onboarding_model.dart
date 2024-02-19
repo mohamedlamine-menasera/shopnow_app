@@ -23,8 +23,4 @@ List<OnBoardingModel> onBoardingList = [
       title: AppStrings.onBoardingTitle3,
       imageURL: ImageAssets.onBoardingImage3,
       body: AppStrings.onBoardingBody3),
-  OnBoardingModel(
-      title: AppStrings.onBoardingTitle4,
-      imageURL: ImageAssets.onBoardingImage4,
-      body: AppStrings.onBoardingBody4)
-];
+ ];

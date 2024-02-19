@@ -17,4 +17,9 @@ class AppStrings {
       "Reliable and fast delivery. We \n deliver your product the fastest was possible";
 
   static const String continueBtn = "Continue";
+  static const String noRouteFound = "no Route Found";
+
+  static const String arTextBtn = "Ar";
+  static const String enTextBtn = "En";
+
 }

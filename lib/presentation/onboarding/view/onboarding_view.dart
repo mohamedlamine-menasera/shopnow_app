@@ -4,15 +4,17 @@ import 'package:shopnow_app/presentation/onboarding/controller/onboarding_contro
 import 'package:shopnow_app/presentation/onboarding/model/custom_dot_onboarding_model.dart';
 import 'package:shopnow_app/presentation/onboarding/model/custom_btn_onboarding_model.dart';
 import 'package:shopnow_app/presentation/onboarding/model/custom_slider_onboarding_model.dart';
+import 'package:shopnow_app/presentation/resources/color_manager.dart';
 
 
-class OnBoarding extends StatelessWidget {
-  const OnBoarding({super.key});
+class OnBoardingView extends StatelessWidget {
+  const OnBoardingView({super.key});
 
   @override
   Widget build(BuildContext context) {
     Get.put(OnBoardingControllerImplement());
     return const Scaffold(
+      backgroundColor: AppColor.backgroundColor,
       body: SafeArea(
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
